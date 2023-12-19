@@ -12,7 +12,7 @@ import translate
 
 translator_to_uz = translate.Translator(to_lang='uz')
 
-TOKEN = getenv("6538613004:AAEtvrCRs4AUonxcv72gtPiCo3Asr_UMh9k")
+TOKEN = getenv("TOKEN")
 
 dp = Dispatcher()
 
@@ -29,7 +29,7 @@ async def translate_handler(message: types.Message) -> None:
 
 
 async def main() -> None:
-    bot = Bot("6538613004:AAEtvrCRs4AUonxcv72gtPiCo3Asr_UMh9k", parse_mode=ParseMode.HTML)
+    bot = Bot("TOKEN", parse_mode=ParseMode.HTML)
     await dp.start_polling(bot)
 
 
